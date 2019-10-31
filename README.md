@@ -33,7 +33,7 @@ Open `index.html` file in your browser and open up the browser's console. In the
 console, enter
 
 ``` javascript
-let element = document.createElement('div')
+let newHeader = document.createElement('h1#victory')
 ```
 
 The element doesn't show up on the page. Why not?
@@ -210,7 +210,7 @@ And it's gone!
 ## Lab
 
 For additional practice, we've provided a series of test whose output you
-should read and then make pass. 
+should read and then make pass.
 
 ## Conclusion
 
