@@ -59,6 +59,8 @@ We can continue to update `element`, since we have a reference to it:
 ``` javascript
 let ul = document.createElement('ul')
 
+// let unordered list =  
+
 for (let i = 0; i < 3; i++) {
   let li = document.createElement('li')
   li.innerHTML = (i + 1).toString()
@@ -210,7 +212,7 @@ And it's gone!
 ## Lab
 
 For additional practice, we've provided a series of test whose output you
-should read and then make pass. 
+should read and then make pass.
 
 ## Conclusion
 
