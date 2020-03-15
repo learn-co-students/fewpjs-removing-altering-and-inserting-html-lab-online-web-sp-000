@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9545dfc7-0a17-4408-90b3-f6c276b9f77b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/fewpjs-removing-altering-and-inserting-html-lab-online-web-sp-000.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +37,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584219090838</updated>
-      <workItem from="1584219093903" duration="7265000" />
+      <workItem from="1584219093903" duration="7923000" />
     </task>
     <servers />
   </component>
@@ -69,5 +65,17 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="69" y="37" width="910" height="730" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1584220045575" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/index.js</url>
+          <line>1</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
