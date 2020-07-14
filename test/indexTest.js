@@ -5,6 +5,7 @@ describe("index.html", () => {
     });
 
     it("has a 'newHeader' variable that points to node 'h1#victory'", () => {
+      console.log(newHeader)
       expect(newHeader.nodeName, "Make sure you create an <h1> with id 'victory'").eql('H1')
     });
 
