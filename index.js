@@ -1,5 +1,5 @@
 
-let element = document.querySelector('main#main');
+let element = document.querySelector('#main');
 element.remove()
 
 let newHeader = document.createElement('h1');
