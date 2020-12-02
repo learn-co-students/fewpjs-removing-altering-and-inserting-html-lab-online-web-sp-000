@@ -2,6 +2,10 @@
 let element = document.querySelector("main");
 element.remove();
 
-header.removeChild();
-let element = 
-let newHeader = header.add()
+let newHeader = document.createElement("h1");
+let victory = document.createElement("victory");
+newHeader.setAttribute("id", "victory");
+victory.innerHTML = "Neil is the champion";
+
+newHeader.appendChild(victory);
+document.body.appendChild(h1);
