@@ -10,6 +10,7 @@ let cashOutButtonElement = document.getElementById('heart');
 let paragraph = document.createElement('div');
 document.body.appendChild(paragraph);
 paragraph.innerText = 'Results';
+paragraph.style.fontSize = "36px";
 paragraph.style.color = "purple";
 paragraph.style.background = "orange";
 paragraph.style.width = "auto";
@@ -22,10 +23,15 @@ p.id = "tester"; // Set the id
 document.body.appendChild(parent);
 parent.append(p);
 
-p.innerHTML = "Hand Number:";
+p.innerHTML = "Hand :";
+p.style.color = "red";
+p.style.fontSize = "20px";
   
-  parent.style.background = "tan";
-  document.body.style.backgroundColor = "grey";
+parent.style.background = "tan";
+document.body.style.backgroundColor = "grey";
+document.body.width = "350em";
+cashOutButtonElement.style.background = "green";
+
 
 // add eventlistener to  p to change colors on rollover;
 buttonElement.addEventListener('click', function (event) {
@@ -43,7 +49,7 @@ function pGenerate() {
   let time = "times";
   for (i=1; i <= 1; i++) {
     var newP = document.createElement("p");
-    var pText = document.createTextNode(numb, "times");
+    var pText = document.createTextNode("Draw Number " + numb );
     newP.appendChild(pText);
     
     var contentSection = document.getElementById("content");
