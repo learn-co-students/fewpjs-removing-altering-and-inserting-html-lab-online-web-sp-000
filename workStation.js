@@ -46,7 +46,8 @@ available.innerHTML = "$" + balance + " .00";
 pGenerate();
 };
 if (balance < 0){
-  alert("see? look whatcha done.");
+  alert("See? You don't have enough money to buy a cheeseburger on the ride home.");
+  window.location.reload();
 }
 });
 
@@ -65,7 +66,9 @@ plusButtonElement.addEventListener('click', function (event) {
   });
 
   minusButtonElement.addEventListener('click', function (event) {
-    bid -= 5
+    if (bid >= 5){
+    bid -= 5;
+  };
     if (bid >= 0){
     bidding.innerHTML = bid;
   };
@@ -76,8 +79,9 @@ let number = 1;
 function pGenerate() {
 let time = "times";
 for (i=1; i <= 1; i++) {
+  var outcome = "lost";
   var newP = document.createElement("p");
-  var pText = document.createTextNode("Deal Number " + number);
+  var pText = document.createTextNode("Round " + number + ": " + outcome);
   newP.appendChild(pText)
   newP.id = "turn";
   var looping = document.getElementById("turn");
