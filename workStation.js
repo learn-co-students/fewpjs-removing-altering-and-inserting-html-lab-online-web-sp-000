@@ -2,11 +2,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM fully loaded and parsed');
 });
 let balance = 100.00;
+let bid = 5.00;
 let buttonElement = document.getElementById('pause');
 let plusButtonElement = document.getElementById('plus');
 let minusButtonElement = document.getElementById('minus');
 let cashOutButtonElement = document.getElementById('heart');
 let available = document.getElementById('balance');
+let bidding = document.getElementById('bidding');
+bidding.innerHTML = bid;
 
 
 let paragraph = document.createElement('div');
@@ -42,10 +45,16 @@ available.innerHTML = "$" + balance + " .00";
 pGenerate();
 });
 cashOutButtonElement.addEventListener('click', function (event) {
-alert("You Left With " + balance + " dollars ! Congratulations.");
+alert("Congratulations. You Left With " + balance + " dollars !");
 });
 // have a second var you can change that begins as balance's value
 // add if statement in cashout function.
+plusButtonElement.addEventListener('click', function (event) {
+  bid += 5
+  bidding.innerHTML = bid;
+
+  // alert("yes this is the correct button.");
+  });
 
 let numb = 1;
 
