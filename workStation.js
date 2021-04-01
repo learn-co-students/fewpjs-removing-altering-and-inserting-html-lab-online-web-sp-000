@@ -49,10 +49,9 @@ cashOutButtonElement.addEventListener('click', function (event) {
 alert("Congratulations. You Left With " + balance + " dollars !")};
 if (balance < 0) {
   balance = balance*(-1)
-  alert("You Docile Cow, You Owe the Bank " + balance + " dollars !")};
+  alert("You Docile Cow, You Owe the Bank " + balance + " dollars.")};
   
 });
-// have a second var you can change that begins as balance's value
 // add if statement in cashout function.
 plusButtonElement.addEventListener('click', function (event) {
   bid += 5
@@ -70,11 +69,10 @@ function pGenerate() {
 let time = "times";
 for (i=1; i <= 1; i++) {
   var newP = document.createElement("p");
-  var pText = document.createTextNode("Deal Number " + number );
-  newP.appendChild(pText);
-  
+  var pText = document.createTextNode("Deal Number " + number);
+  newP.appendChild(pText)
   var contentSection = document.getElementById("content");
   document.body.insertBefore(newP, contentSection);
-  numb +=1
+  number +=1
 }
 }
