@@ -6,6 +6,8 @@ let buttonElement = document.getElementById('pause');
 let plusButtonElement = document.getElementById('plus');
 let minusButtonElement = document.getElementById('minus');
 let cashOutButtonElement = document.getElementById('heart');
+let available = document.getElementById('balance');
+
 
 let paragraph = document.createElement('div');
 document.body.appendChild(paragraph);
@@ -35,10 +37,13 @@ cashOutButtonElement.style.background = "green";
 
 // add eventlistener to  p to change colors on rollover;
 buttonElement.addEventListener('click', function (event) {
+  balance -= 2
+  document.body.appendChild(available); 
+  available.innerHTML = balance;
   pGenerate();
 });
 cashOutButtonElement.addEventListener('click', function (event) {
-  alert("You Have" + balance + " dollars !");
+  alert("You Left With " + balance + " dollars ! Congratulations.");
 });
 // have a second var you can change that begins as balance's value
 // add if statement in cashout function.
@@ -49,7 +54,7 @@ function pGenerate() {
   let time = "times";
   for (i=1; i <= 1; i++) {
     var newP = document.createElement("p");
-    var pText = document.createTextNode("Draw Number " + numb );
+    var pText = document.createTextNode("Deal Number " + numb );
     newP.appendChild(pText);
     
     var contentSection = document.getElementById("content");
