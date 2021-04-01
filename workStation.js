@@ -44,6 +44,7 @@ balance -= bid
 available.innerHTML = "$" + balance + " .00";
 pGenerate();
 });
+
 cashOutButtonElement.addEventListener('click', function (event) {
   if (balance > 0) {
 alert("Congratulations. You Left With " + balance + " dollars !")};
@@ -70,9 +71,11 @@ let time = "times";
 for (i=1; i <= 1; i++) {
   var newP = document.createElement("p");
   var pText = document.createTextNode("Deal Number " + number);
-  newP.appendChild(pText)
+  newP.id = "turn";
+  newP.appendChild(pText);
+  var looping = document.getElementById("turn");
   var contentSection = document.getElementById("content");
   document.body.insertBefore(newP, contentSection);
   number +=1
-}
+};
 }
