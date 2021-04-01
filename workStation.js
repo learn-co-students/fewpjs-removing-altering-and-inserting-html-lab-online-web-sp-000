@@ -45,7 +45,12 @@ available.innerHTML = "$" + balance + " .00";
 pGenerate();
 });
 cashOutButtonElement.addEventListener('click', function (event) {
-alert("Congratulations. You Left With " + balance + " dollars !");
+  if (balance > 0) {
+alert("Congratulations. You Left With " + balance + " dollars !")};
+if (balance < 0) {
+  balance = balance*(-1)
+  alert("You Docile Cow, You Owe the Bank " + balance + " dollars !")};
+  
 });
 // have a second var you can change that begins as balance's value
 // add if statement in cashout function.
