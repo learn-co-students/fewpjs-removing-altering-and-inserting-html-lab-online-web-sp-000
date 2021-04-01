@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed');
+  console.log('DOM fully loaded and parsed');
 });
 let balance = 100.00;
 let buttonElement = document.getElementById('pause');
@@ -28,7 +28,7 @@ parent.append(p);
 p.innerHTML = "Hand :";
 p.style.color = "red";
 p.style.fontSize = "20px";
-  
+
 parent.style.background = "tan";
 document.body.style.backgroundColor = "grey";
 document.body.width = "350em";
@@ -37,13 +37,12 @@ cashOutButtonElement.style.background = "green";
 
 // add eventlistener to  p to change colors on rollover;
 buttonElement.addEventListener('click', function (event) {
-  balance -= 2
-  document.body.appendChild(available); 
-  available.innerHTML = balance;
-  pGenerate();
+balance -= 2
+available.innerHTML = "$" + balance + " .00";
+pGenerate();
 });
 cashOutButtonElement.addEventListener('click', function (event) {
-  alert("You Left With " + balance + " dollars ! Congratulations.");
+alert("You Left With " + balance + " dollars ! Congratulations.");
 });
 // have a second var you can change that begins as balance's value
 // add if statement in cashout function.
@@ -51,14 +50,14 @@ cashOutButtonElement.addEventListener('click', function (event) {
 let numb = 1;
 
 function pGenerate() {
-  let time = "times";
-  for (i=1; i <= 1; i++) {
-    var newP = document.createElement("p");
-    var pText = document.createTextNode("Deal Number " + numb );
-    newP.appendChild(pText);
-    
-    var contentSection = document.getElementById("content");
-    document.body.insertBefore(newP, contentSection);
-    numb +=1
-  }
+let time = "times";
+for (i=1; i <= 1; i++) {
+  var newP = document.createElement("p");
+  var pText = document.createTextNode("Deal Number " + numb );
+  newP.appendChild(pText);
+  
+  var contentSection = document.getElementById("content");
+  document.body.insertBefore(newP, contentSection);
+  numb +=1
+}
 }
