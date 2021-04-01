@@ -41,12 +41,17 @@ cashOutButtonElement.style.background = "green";
 // add eventlistener to  p to change colors on rollover;
 buttonElement.addEventListener('click', function (event) {
 balance -= bid
+if (balance >= 0){
 available.innerHTML = "$" + balance + " .00";
 pGenerate();
+};
+if (balance < 0){
+  alert("see? look whatcha done.");
+}
 });
 
 cashOutButtonElement.addEventListener('click', function (event) {
-  if (balance > 0) {
+  if (balance >= 0) {
 alert("Congratulations. You Left With " + balance + " dollars !")};
 if (balance < 0) {
   balance = balance*(-1)
@@ -61,7 +66,9 @@ plusButtonElement.addEventListener('click', function (event) {
 
   minusButtonElement.addEventListener('click', function (event) {
     bid -= 5
+    if (bid >= 0){
     bidding.innerHTML = bid;
+  };
     });
   
 let number = 1;
@@ -71,11 +78,12 @@ let time = "times";
 for (i=1; i <= 1; i++) {
   var newP = document.createElement("p");
   var pText = document.createTextNode("Deal Number " + number);
+  newP.appendChild(pText)
   newP.id = "turn";
-  newP.appendChild(pText);
   var looping = document.getElementById("turn");
   var contentSection = document.getElementById("content");
   document.body.insertBefore(newP, contentSection);
+
   number +=1
 };
 }
